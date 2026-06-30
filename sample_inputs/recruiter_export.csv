@@ -1,5 +1,5 @@
 name,email,phone,current_company,title,location,skills,years_experience
-Rishit Sura,rishitsura@gmail.com,+91-7382997890,IBM SkillsBuild,Data Science Intern,"Hyderabad, India","Python, React.js, FastAPI, Docker, TensorFlow, PostgreSQL, JavaScript, TypeScript",2
+Rishit Sura,rishitsura@gmail.com,+91-7382997890,IBM SkillsBuild,Data Science Intern,"Hyderabad, India","Python, React.js, FastAPI, Docker, TensorFlow, PostgreSQL, JavaScript, TypeScript",0
 Ananya Krishnan,ananya.k@gmail.com,+91-9845012345,Google,ML Engineer,"Bangalore, India","Python, TensorFlow, PyTorch, Kubernetes, BigQuery, Apache Spark, Computer Vision",4
 Marcus Weber,marcus.weber@protonmail.com,+49-151-23456789,Stripe,Senior Backend Engineer,"Berlin, Germany","Go, Rust, PostgreSQL, Kubernetes, gRPC, Redis, Terraform",6
 Priya Deshmukh,priya.deshmukh@outlook.com,+91-9823456789,Flipkart,Product Manager,"Pune, India","Product Strategy, SQL, Data Analysis, Agile, A/B Testing, Figma",5

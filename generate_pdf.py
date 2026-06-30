@@ -4,9 +4,9 @@ from fpdf.enums import XPos, YPos
 class PDF(FPDF):
     def header(self):
         self.set_font('helvetica', 'B', 16)
-        self.cell(0, 10, 'Multi-Source Candidate Data Transformer', new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='C')
+        self.cell(0, 10, 'System Architecture & Design Document', new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='C')
         self.set_font('helvetica', 'I', 11)
-        self.cell(0, 10, 'Design One-Pager - Eightfold Engineering Intern Assignment', new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='C')
+        self.cell(0, 10, 'Multi-Source Candidate Data Transformer Pipeline', new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='C')
         self.ln(5)
 
     def chapter_title(self, title):
@@ -55,38 +55,34 @@ class PDF(FPDF):
 pdf = PDF()
 pdf.add_page()
 
-pdf.chapter_title('1. The Problem')
+pdf.chapter_title('1. Problem Statement & Objective')
 pdf.chapter_body(
-    "Eightfold ingests candidate information from structured sources (Recruiter CSV, ATS JSON, GitHub API) "
-    "and unstructured sources (Resumes, Recruiter Notes). Downstream systems require one clean, canonical profile "
-    "per candidate with normalized formats, deduplicated entries, and detailed provenance indicating source reliability."
+    "The candidate data ingestion pipeline aggregates records from disparate structured (ATS, CSV, GitHub) and unstructured (Resumes, Notes) origins. The primary objective is to design a deterministic ETL (Extract, Transform, Load) pipeline that standardizes schema variability, resolves conflicting data points across overlapping sources, and emits a single canonical profile. Downstream consumers require high data fidelity, explicit provenance tracking, and configurable payload projections."
 )
 
-pdf.chapter_title('2. Pipeline Architecture')
+pdf.chapter_title('2. System Architecture')
 pdf.draw_architecture_diagram()
 pdf.chapter_body(
-    "The deterministic, rule-based pipeline consists of advanced stages to guarantee data integrity:\n\n"
-    "1. Detect & Extract: Source-specific extractors parse inputs (CSV, JSON, GitHub, Resumes, Notes) into CandidateFragment objects.\n"
-    "2. Normalize: Phones map to E.164, locations extract city/country, degrees map to standard formats.\n"
-    "3. Conflict Analysis (CACS): A pre-merge analytical pass detects contradictory data across sources. It flags discrepancies for confidence penalties, stratifies skills by recency (Confirmed, Current, Historical), and generates a fully traceable Lineage IR.\n"
-    "4. Merge: Identities match via primary keys. Scalar fields take the most reliable source's value. Array fields merge via rapidfuzz deduplication.\n"
-    "5. Confidence Scoring: Profiles receive a score based on source weights and cross-source agreement, adjusted by CACS penalties.\n"
-    "6. Project & Validate: Runtime JSON configurations dictate the final structure and missing-value policies before rigid schema validation."
+    "The pipeline operates as a stateless, multi-stage DAG to ensure idempotency and determinism:\n\n"
+    "1. Ingestion & Extraction: Parsers ingest payloads and map them to a unified internal representation (CandidateFragment).\n"
+    "2. Normalization: Applies global formatting standards (E.164 for telephony, ISO-3166 for locales, canonical mappings for tech stacks).\n"
+    "3. Conflict Analysis (CACS): A pre-merge analytical heuristic that detects data divergence, applies temporal recency stratification to skills, and generates an auditable Lineage IR.\n"
+    "4. Merge & Deduplication: Resolves identity collisions via primary key matching. Array fields are deduplicated using Levenshtein distance metrics (rapidfuzz).\n"
+    "5. Confidence Scoring: Aggregates source-level reliability weights and cross-validation bonuses to assign a confidence index [0.0 - 1.0].\n"
+    "6. Projection: Hydrates the final canonical payload according to dynamic downstream JSON schemas."
 )
 
-pdf.chapter_title('3. Resolution Heuristics')
+pdf.chapter_title('3. Core Resolution Heuristics')
 pdf.chapter_body(
-    "- Identity Merging: Uses a multi-pass approach matching overlapping emails, then phone/name heuristics.\n"
-    "- Experience/Education Dedup: Employs rapidfuzz matching (threshold > 75%) on institution and company names, "
-    "along with date range intersections.\n"
-    "- Unstructured Parsing: Regex-driven contextual extraction handles phrases like 'works as a PM at Flipkart' "
-    "to properly anchor both title and company, minimizing hallucinations."
+    "- Identity Resolution: Evaluates overlapping candidate entities using primary keys (email) and secondary fallback permutations (normalized name + phone).\n"
+    "- Array Deduplication: Employs fuzzy string matching (threshold > 75%) coupled with date range intersections to merge overlapping experience and education records.\n"
+    "- Unstructured Contextual Parsing: Utilizes strict regex boundaries and contextual anchors rather than stochastic LLMs, drastically reducing hallucination risk when parsing free-text roles and institutions."
 )
 
-pdf.chapter_title('4. User Interfaces')
+pdf.chapter_title('4. Interfaces & Extensibility')
 pdf.chapter_body(
-    "- Command Line Interface (CLI): The primary robust engine for batch processing profiles.\n"
-    "- Web UI (Streamlit): An interactive dashboard for evaluators to upload candidate files and view the resulting canonical JSON instantaneously."
+    "- Command Line Interface (CLI): Engineered for batch processing, CI/CD integration, and high-throughput execution.\n"
+    "- Web UI (Streamlit): Provides an interactive dashboard for QA and product evaluators to visually validate merging heuristics and projected schemas in real-time."
 )
 
 pdf.output('Eightfold_Candidate_Transformer_Design.pdf')

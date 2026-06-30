@@ -1,0 +1,378 @@
+[
+  {
+    "profile": {
+      "candidate_id": "859aa228-2cec-4371-bd54-cb9aceea090c",
+      "full_name": "Rishit Sura",
+      "emails": [
+        "rishitsura@gmail.com"
+      ],
+      "phones": [
+        "+917382997890"
+      ],
+      "location": null,
+      "links": null,
+      "headline": null,
+      "years_experience": 0.1,
+      "skills": [
+        {
+          "name": "2Nd Prize In Project Contest At Convergence 2K25",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Ai/Ml Yolov8",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Bootstrap",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "C++",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "CSS",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Cloud & Devops Aws",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Co-Curricular & Achievements",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Data Visualization Tableau",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Databases Mysql",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Express.js",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Extra-Curricular Activities",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "FastAPI",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Flask",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Git",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Github",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "HTML",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Java",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "JavaScript",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Machine Learning",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Microsoft Power Bi",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "MongoDB",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Node.js",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "NumPy",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Opencv",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Opencv And Flutter.",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Pandas",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Programming Languages Python",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "SQL",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "SQLite",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "TensorFlow",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "TypeScript",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Using Rag",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Vnrvjiet.",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "Web Technologies React.Js",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        },
+        {
+          "name": "scikit-learn",
+          "confidence": 0.85,
+          "sources": [
+            "resume"
+          ],
+          "status": "current"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Data Science Intern",
+          "title": "IBM SkillsBuild",
+          "start": "2024-02",
+          "end": "2024-03",
+          "summary": "Analyzed large-scale datasets using R programming to extract insights that improve operational efficiency. Created data analysis reports and dashboards to support stakeholders in making data-driven decisions."
+        }
+      ],
+      "education": [
+        {
+          "institution": "VNR Vignana Jyothi Institute of Engineering and Technology CGPA: 8.46",
+          "degree": "B.Tech",
+          "field": ". in Computer Science and Engineering (AIML) 2022 – 2026",
+          "end_year": 2020
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "resume",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "resume",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "resume",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "resume",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "experience",
+          "source": "resume",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "resume",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge_stratified"
+        }
+      ],
+      "overall_confidence": 0.58,
+      "conflict_flags": [],
+      "merge_decisions": []
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

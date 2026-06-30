@@ -31,6 +31,10 @@ st.header("1. Inputs")
 uploaded_files = st.file_uploader("Upload Input Files (CSV, JSON, PDF, TXT)", accept_multiple_files=True)
 github_url = st.text_input("Or enter a GitHub profile URL (e.g., https://github.com/torvalds)")
 
+# Initialize session state for results
+if "results" not in st.session_state:
+    st.session_state.results = None
+
 if st.button("Run Pipeline", type="primary"):
     if not uploaded_files and not github_url:
         st.error("Please upload at least one file or enter a GitHub URL.")
@@ -65,59 +69,60 @@ if st.button("Run Pipeline", type="primary"):
                 # Run pipeline
                 try:
                     pipeline = Pipeline()
-                    results = pipeline.run_and_serialize(
+                    st.session_state.results = pipeline.run_and_serialize(
                         input_paths=input_paths,
                         config_path=config_path,
                         source_types={}
                     )
-                    
-                    st.success(f"Pipeline completed successfully! Extracted {len(results)} candidate profiles.")
-                    
-                    # Display Results
-                    st.header("2. Projected Canonical Profiles")
-                    
-                    for i, result in enumerate(results):
-                        profile = result.get("profile", {})
-                        validation = result.get("validation", {})
-                        
-                        name = profile.get("full_name", f"Candidate {i+1}")
-                        is_valid = validation.get("valid", True)
-                        conf = profile.get("overall_confidence", 0)
-                        
-                        status_icon = "✅" if is_valid else "❌"
-                        with st.expander(f"{status_icon} {name} (Confidence: {conf:.2f})", expanded=False):
-                            # High-level clean UX display
-                            col1, col2 = st.columns(2)
-                            
-                            with col1:
-                                st.markdown(f"**Candidate ID:** `{profile.get('candidate_id', 'N/A')}`")
-                                st.markdown(f"**Full Name:** {profile.get('full_name', 'N/A')}")
-                                
-                                emails = profile.get("emails", [])
-                                if emails:
-                                    st.markdown(f"**Emails:** {', '.join(emails)}")
-                                    
-                                phones = profile.get("phones", [])
-                                if phones:
-                                    st.markdown(f"**Phones:** {', '.join(phones)}")
-                                    
-                            with col2:
-                                loc = profile.get("location", {})
-                                loc_str = ", ".join(filter(None, [loc.get("city"), loc.get("region"), loc.get("country")]))
-                                st.markdown(f"**Location:** {loc_str or 'N/A'}")
-                                
-                                exp = profile.get("years_experience")
-                                st.markdown(f"**Years of Experience:** {exp if exp is not None else 'N/A'}")
-                                
-                                headline = profile.get("headline")
-                                st.markdown(f"**Headline:** {headline or 'N/A'}")
-                                
-                            # Divider
-                            st.divider()
-                            
-                            # Toggle for Raw JSON Schema
-                            if st.toggle("View Schema (Raw JSON)", key=f"toggle_{i}"):
-                                st.json(result)
-                            
                 except Exception as e:
                     st.error(f"Error running pipeline: {str(e)}")
+
+# Display Results from Session State
+if st.session_state.results is not None:
+    results = st.session_state.results
+    st.success(f"Pipeline completed successfully! Extracted {len(results)} candidate profiles.")
+    
+    st.header("2. Projected Canonical Profiles")
+    
+    for i, result in enumerate(results):
+        profile = result.get("profile", {})
+        validation = result.get("validation", {})
+        
+        name = profile.get("full_name", f"Candidate {i+1}")
+        is_valid = validation.get("valid", True)
+        conf = profile.get("overall_confidence", 0)
+        
+        status_icon = "✅" if is_valid else "❌"
+        with st.expander(f"{status_icon} {name} (Confidence: {conf:.2f})", expanded=False):
+            # High-level clean UX display
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown(f"**Candidate ID:** `{profile.get('candidate_id', 'N/A')}`")
+                st.markdown(f"**Full Name:** {profile.get('full_name', 'N/A')}")
+                
+                emails = profile.get("emails", [])
+                if emails:
+                    st.markdown(f"**Emails:** {', '.join(emails)}")
+                    
+                phones = profile.get("phones", [])
+                if phones:
+                    st.markdown(f"**Phones:** {', '.join(phones)}")
+                    
+            with col2:
+                loc = profile.get("location", {})
+                loc_str = ", ".join(filter(None, [loc.get("city"), loc.get("region"), loc.get("country")]))
+                st.markdown(f"**Location:** {loc_str or 'N/A'}")
+                
+                exp = profile.get("years_experience")
+                st.markdown(f"**Years of Experience:** {exp if exp is not None else 'N/A'}")
+                
+                headline = profile.get("headline")
+                st.markdown(f"**Headline:** {headline or 'N/A'}")
+                
+            # Divider
+            st.divider()
+            
+            # Toggle for Raw JSON Schema
+            if st.toggle("View Schema (Raw JSON)", key=f"toggle_{i}"):
+                st.json(result)

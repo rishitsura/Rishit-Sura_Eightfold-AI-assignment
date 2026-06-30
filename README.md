@@ -134,6 +134,7 @@ python -m pytest tests/ -v --tb=short
 ## Project Structure
 
 ```
+├── app.py                      # Streamlit Web UI
 ├── src/transformer/
 │   ├── cli.py                  # CLI entrypoint (Click)
 │   ├── pipeline.py             # Orchestrator
@@ -147,6 +148,7 @@ python -m pytest tests/ -v --tb=short
 │   │   ├── resume_extractor.py # PDF / DOCX / TXT resume
 │   │   └── notes_extractor.py  # Recruiter notes
 │   ├── normalizers.py          # Phone, date, country, skill normalization
+│   ├── conflict_analyzer.py    # Pre-merge CACS data divergence analysis
 │   ├── merger.py               # Cross-source merge + conflict resolution
 │   ├── confidence.py           # Confidence scoring
 │   ├── projector.py            # Configurable output projection

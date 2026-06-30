@@ -110,7 +110,7 @@ if st.session_state.results is not None:
                     st.markdown(f"**Phones:** {', '.join(phones)}")
                     
             with col2:
-                loc = profile.get("location", {})
+                loc = profile.get("location") or {}
                 loc_str = ", ".join(filter(None, [loc.get("city"), loc.get("region"), loc.get("country")]))
                 st.markdown(f"**Location:** {loc_str or 'N/A'}")
                 

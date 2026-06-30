@@ -18,6 +18,39 @@ class PDF(FPDF):
         self.set_font('helvetica', '', 11)
         self.multi_cell(0, 6, body)
         self.ln(4)
+        
+    def draw_architecture_diagram(self):
+        self.ln(2)
+        stages = ["Detect", "Extract", "Normalize", "CACS", "Merge", "Score", "Project", "Validate"]
+        
+        box_w = 21
+        box_h = 10
+        gap = 3
+        
+        total_w = (box_w * len(stages)) + (gap * (len(stages) - 1))
+        start_x = (210 - total_w) / 2 # A4 width is 210mm
+        
+        current_x = start_x
+        current_y = self.get_y()
+        
+        self.set_font('helvetica', 'B', 8)
+        self.set_draw_color(50, 50, 50)
+        self.set_fill_color(240, 240, 240)
+        
+        for i, stage in enumerate(stages):
+            self.set_xy(current_x, current_y)
+            self.cell(box_w, box_h, stage, border=1, align='C', fill=True)
+            
+            if i < len(stages) - 1:
+                arrow_x = current_x + box_w
+                arrow_y = current_y + (box_h / 2)
+                self.line(arrow_x, arrow_y, arrow_x + gap, arrow_y)
+                self.line(arrow_x + gap - 1, arrow_y - 1, arrow_x + gap, arrow_y)
+                self.line(arrow_x + gap - 1, arrow_y + 1, arrow_x + gap, arrow_y)
+                
+            current_x += box_w + gap
+            
+        self.set_y(current_y + box_h + 8)
 
 pdf = PDF()
 pdf.add_page()
@@ -30,6 +63,7 @@ pdf.chapter_body(
 )
 
 pdf.chapter_title('2. Pipeline Architecture')
+pdf.draw_architecture_diagram()
 pdf.chapter_body(
     "The deterministic, rule-based pipeline consists of advanced stages to guarantee data integrity:\n\n"
     "1. Detect & Extract: Source-specific extractors parse inputs (CSV, JSON, GitHub, Resumes, Notes) into CandidateFragment objects.\n"

@@ -1,0 +1,67 @@
+Candidate: Rishit Sura
+
+Spoke with Rishit on 2026-06-15. He is currently at IBM SkillsBuild as a Data Science Intern. Based in Hyderabad, India. Graduating in 2026 from VNRVJIET with B.Tech in CS (AIML specialization).
+
+Very impressive for a fresh grad - Grand Finalist at Smart India Hackathon 2024 and 2025, ranked among top 5 teams nationally. Also won the GDGC Solution Challenge 2025. Has published research papers and co-authored academic publications.
+
+Strong technical skills - proficient in Python, React.js, FastAPI, Docker. Has built production-grade systems including an Inventory Optimization platform using Double DQN reinforcement learning agents and a delivery optimization system for India Post. Shows rare ability to architect microservices with RabbitMQ, WebSockets, and containerized deployments.
+
+rishitsura@gmail.com | Phone: +91 7382997890
+LinkedIn: https://linkedin.com/in/rishitsura
+GitHub: https://github.com/rishit-sura
+Portfolio: https://rishitsura.vercel.app
+
+Cultural fit: Excellent leadership qualities - led multiple nationwide hackathons with 1000+ participants at VNRVJIET. Active in NSS community service. Very articulate and passionate about AI/ML.
+
+Recommendation: Strong yes. Outstanding candidate for engineering intern role. Move to technical interview round immediately.
+
+---
+
+Candidate: Priya Deshmukh
+
+Met Priya at the Pune tech conference on 2026-05-20. Currently works as a Product Manager at Flipkart. She has about 5 years of experience in tech, transitioning from engineering to product.
+
+Based in Pune, India. Has a strong technical background - graduated from IIT Bombay with a B.Tech in Computer Science. Previously worked as a software engineer at Amazon before transitioning to PM role at Flipkart.
+
+Skilled in Product Strategy, Data Analysis, SQL, and A/B Testing. Very familiar with Agile methodologies. Also comfortable with Python for data work and has Figma design skills.
+
+priya.deshmukh@outlook.com
+Phone: (020) 9823-456789
+LinkedIn: https://linkedin.com/in/priyadeshmukh-pm
+
+Notes: Priya is interested in transitioning to an AI product role. Has been leading ML-powered recommendation features at Flipkart for the past 2 years. Very sharp, data-driven decision maker. Has experience managing cross-functional teams of 15+ engineers.
+
+Recommendation: Good fit for Senior PM role. Schedule follow-up with hiring manager.
+
+---
+
+Candidate: Sofia Rodriguez
+
+Interviewed Sofia on 2026-06-01. Currently works as a Senior Data Scientist at Booking.com in Barcelona.
+
+Has about 4 years of experience in data science and machine learning. Previously at Telefonica Research where she built churn prediction models with 94% AUC.
+
+Skilled in Python, scikit-learn, Apache Spark, SQL, and deep learning. Also experienced with Tableau for visualization and R for statistical analysis.
+
+sofia.r@company.es
+Phone: +34 612 345 678
+
+Notes: Sofia has strong publication record in ML conferences. Currently building dynamic pricing models for 28M+ property listings at Booking.com. Increased revenue per booking by 8% through her pricing optimization work. Fluent in Spanish, English, and Portuguese.
+
+Recommendation: Strong candidate for Senior Data Scientist role. Technical depth is impressive.
+
+---
+
+Candidate: Raj Patel
+
+Spoke with Raj on 2026-06-10. Currently works as a Backend Developer at Razorpay in Mumbai. He has 4 years of experience building payment infrastructure.
+
+Very strong in Python and Django. Has experience with Redis, PostgreSQL, Celery for async processing, and Kubernetes for orchestration. Built Razorpay's reconciliation engine handling 10M+ daily transactions.
+
+raj.patel@email.com
+Phone: +91 8765432190
+GitHub: https://github.com/rajpatel-dev
+
+Notes: Raj is looking for a senior backend role at a global fintech company. Has deep knowledge of payment systems, PCI compliance, and high-throughput distributed systems. Previously worked at PhonePe as a junior developer.
+
+Recommendation: Good fit for backend engineering. Schedule system design round.

@@ -1,0 +1,69 @@
+RISHIT SURA
+rishitsura@gmail.com | +91-7382997890
+Hyderabad, Telangana, India
+Portfolio: https://rishitsura.vercel.app
+GitHub: https://github.com/rishit-sura
+LinkedIn: https://linkedin.com/in/rishitsura
+
+PROFESSIONAL SUMMARY
+Full-stack developer and AI/ML enthusiast with strong experience in building production-grade systems using Python, React.js, FastAPI, and Docker. Grand Finalist at Smart India Hackathon 2024 & 2025. Passionate about applying reinforcement learning and computer vision to real-world problems.
+
+EXPERIENCE
+
+Data Science Intern at IBM SkillsBuild
+February 2024 - March 2024
+• Analyzed large-scale datasets using R programming to extract insights that improve operational efficiency.
+• Created data analysis reports and dashboards to support stakeholders in making data-driven decisions.
+
+PROJECTS
+
+Inventory Optimization System
+Technologies: Double DQN, FastAPI, RabbitMQ, PostgreSQL, Docker, React.js
+• Developed a production-grade inventory platform using Double DQN RL agents to optimize multi-SKU supply chains, outperforming (s,S) baselines and nearing 90% oracle policy results.
+• Architected a FastAPI/RabbitMQ microservices backend with WebSockets for real-time telemetry; containerized with Docker and deployed via GitHub Actions to DigitalOcean.
+• Co-authored and submitted a Literature survey and an Implementation paper for academic publication.
+
+OptiDeliver - Delivery Optimization System
+Technologies: React.js, Flask, MongoDB, Twilio, Random Forest, K-Means++
+• Developed an AI-powered logistics solution for India Post that optimizes delivery routes and time slots for daily shipments, designed to reduce delivery times and fuel consumption.
+• Integrated Twilio API for real-time SMS notifications daily and built dynamic delivery scheduling system with sender-customer preference integration.
+• Research Paper: An AI-driven System to Modernise Last-Mile Delivery Systems accepted for Oral Presentation at IGNITE-2026 (IEEE Conference).
+
+Smart Event Management Platform
+Technologies: Spring Boot, React.js, TypeScript, MySQL, Redis, Docker
+• Developed comprehensive event management system with user authentication, real-time RSVP tracking, and live capacity updates.
+• Implemented scalable architecture with Redis caching, Docker containerization, and WebSocket real-time updates.
+
+EDUCATION
+
+VNR Vignana Jyothi Institute of Engineering and Technology
+B.Tech in Computer Science and Engineering (AIML)
+2022 - 2026
+CGPA: 8.46
+
+Sri Chaitanya Junior College, Telangana
+Intermediate
+2020 - 2022
+Percentage: 89.6
+
+SKILLS
+Programming Languages: Python, Java, C, C++, JavaScript, TypeScript, SQL, R
+Web Technologies: React.js, Node.js, Express.js, Flask, FastAPI, HTML, CSS, Bootstrap
+Databases: MySQL, SQLite, MongoDB, PostgreSQL
+Data Visualization: Tableau, Microsoft Power BI
+Cloud & DevOps: AWS, Docker, Git, GitHub
+AI/ML: YOLOv8, OpenCV, TensorFlow, scikit-learn, Pandas, NumPy
+
+CERTIFICATIONS
+• Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
+• Oracle Cloud Infrastructure 2025 Certified Data Science Professional
+• Software Project Management Certification from NPTEL
+• Smart Coder Certification from Smart Interviews
+• Supervised Machine Learning: Regression and Classification from Coursera
+• Tableau Certification from Internshala
+
+ACHIEVEMENTS
+• Grand Finalist of Smart India Hackathon 2025 & 2024 - Ranked among the top 5 teams Nationwide.
+• Winner of GDGC Solution Challenge 2025 - Developed SportAI, using RAG, ML, OpenCV and Flutter.
+• Consolation Prize in Paper Presentation at Convergence 2k25, VNRVJIET.
+• 2nd Prize in Project Contest at Convergence 2k25, VNRVJIET.

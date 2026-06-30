@@ -1,0 +1,288 @@
+{
+  "candidates": [
+    {
+      "candidateName": "Rishit Sura",
+      "emailAddress": "rishitsura@gmail.com",
+      "phone": "+917382997890",
+      "currentTitle": "Data Science Intern",
+      "currentCompany": "IBM SkillsBuild",
+      "location": {
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "headline": "Full-stack developer and AI/ML enthusiast. Grand Finalist at Smart India Hackathon 2024 & 2025. Building production-grade systems with Python, React.js, and FastAPI.",
+      "skills": [
+        {"name": "Python", "level": "expert"},
+        {"name": "React.js", "level": "advanced"},
+        {"name": "FastAPI", "level": "advanced"},
+        {"name": "Docker", "level": "intermediate"},
+        {"name": "PostgreSQL", "level": "intermediate"},
+        {"name": "TensorFlow", "level": "intermediate"},
+        {"name": "JavaScript", "level": "advanced"},
+        {"name": "TypeScript", "level": "intermediate"},
+        {"name": "Java", "level": "intermediate"},
+        {"name": "MongoDB", "level": "intermediate"},
+        {"name": "Flask", "level": "intermediate"},
+        {"name": "AWS", "level": "beginner"},
+        {"name": "Git", "level": "advanced"},
+        {"name": "scikit-learn", "level": "intermediate"},
+        {"name": "OpenCV", "level": "intermediate"}
+      ],
+      "workExperience": [
+        {
+          "org": "IBM SkillsBuild",
+          "role": "Data Science Intern",
+          "startDate": "2024-02",
+          "endDate": "2024-03",
+          "description": "Analyzed large-scale datasets using R programming. Created data analysis reports and dashboards for stakeholders."
+        }
+      ],
+      "education": [
+        {
+          "institution": "VNR Vignana Jyothi Institute of Engineering and Technology",
+          "degree": "B.Tech in Computer Science and Engineering (AIML)",
+          "graduationYear": 2026,
+          "gpa": "8.46/10"
+        }
+      ],
+      "links": {
+        "linkedin": "https://linkedin.com/in/rishitsura",
+        "github": "https://github.com/rishit-sura",
+        "portfolio": "https://rishitsura.vercel.app"
+      },
+      "yearsOfExperience": 2
+    },
+    {
+      "candidateName": "Ananya Krishnan",
+      "emailAddress": "ananya.k@gmail.com",
+      "phone": "+919845012345",
+      "currentTitle": "ML Engineer",
+      "currentCompany": "Google",
+      "location": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "headline": "Machine Learning Engineer at Google specializing in NLP and recommendation systems. Building large-scale ML pipelines serving 100M+ users.",
+      "skills": [
+        {"name": "Python", "level": "expert"},
+        {"name": "TensorFlow", "level": "expert"},
+        {"name": "PyTorch", "level": "advanced"},
+        {"name": "Kubernetes", "level": "advanced"},
+        {"name": "BigQuery", "level": "advanced"},
+        {"name": "Apache Spark", "level": "intermediate"},
+        {"name": "Computer Vision", "level": "advanced"},
+        {"name": "NLP", "level": "expert"},
+        {"name": "Docker", "level": "advanced"},
+        {"name": "SQL", "level": "advanced"}
+      ],
+      "workExperience": [
+        {
+          "org": "Google",
+          "role": "ML Engineer",
+          "startDate": "2023-01",
+          "endDate": null,
+          "description": "Building recommendation models for YouTube Shorts. Reduced model latency by 35% using TensorRT optimization."
+        },
+        {
+          "org": "Amazon",
+          "role": "Applied Scientist Intern",
+          "startDate": "2022-05",
+          "endDate": "2022-08",
+          "description": "Developed NER models for product attribute extraction. Improved F1 score by 12% over baseline."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indian Institute of Technology Madras",
+          "degree": "M.Tech in Computer Science",
+          "graduationYear": 2022
+        },
+        {
+          "institution": "National Institute of Technology Trichy",
+          "degree": "B.Tech in Computer Science",
+          "graduationYear": 2020
+        }
+      ],
+      "links": {
+        "linkedin": "https://linkedin.com/in/ananyakrishnan",
+        "github": "https://github.com/ananya-krishnan"
+      },
+      "yearsOfExperience": 4
+    },
+    {
+      "candidateName": "Marcus Weber",
+      "emailAddress": "marcus.weber@protonmail.com",
+      "phone": "+4915123456789",
+      "currentTitle": "Senior Backend Engineer",
+      "currentCompany": "Stripe",
+      "location": {
+        "city": "Berlin",
+        "state": "Berlin",
+        "country": "Germany"
+      },
+      "headline": "Systems-oriented backend engineer building payment infrastructure at Stripe. Focused on high-throughput distributed systems.",
+      "skills": [
+        {"name": "Go", "level": "expert"},
+        {"name": "Rust", "level": "advanced"},
+        {"name": "PostgreSQL", "level": "expert"},
+        {"name": "Kubernetes", "level": "advanced"},
+        {"name": "gRPC", "level": "advanced"},
+        {"name": "Redis", "level": "advanced"},
+        {"name": "Terraform", "level": "intermediate"},
+        {"name": "Python", "level": "intermediate"},
+        {"name": "AWS", "level": "advanced"}
+      ],
+      "workExperience": [
+        {
+          "org": "Stripe",
+          "role": "Senior Backend Engineer",
+          "startDate": "2022-03",
+          "endDate": null,
+          "description": "Architected payment routing engine handling $50B+ annual volume. Reduced transaction failure rate by 23%."
+        },
+        {
+          "org": "Delivery Hero",
+          "role": "Backend Engineer",
+          "startDate": "2020-01",
+          "endDate": "2022-02",
+          "description": "Built real-time order tracking microservices. Scaled system to handle 2M concurrent connections."
+        },
+        {
+          "org": "SAP",
+          "role": "Software Developer",
+          "startDate": "2018-07",
+          "endDate": "2019-12",
+          "description": "Developed enterprise resource planning modules for cloud migration."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Technical University of Munich",
+          "degree": "M.Sc. in Informatics",
+          "graduationYear": 2018
+        },
+        {
+          "institution": "RWTH Aachen University",
+          "degree": "B.Sc. in Computer Science",
+          "graduationYear": 2016
+        }
+      ],
+      "links": {
+        "linkedin": "https://linkedin.com/in/marcusweber-dev",
+        "github": "https://github.com/mweber-dev"
+      },
+      "yearsOfExperience": 6
+    },
+    {
+      "candidateName": "Sofia Rodriguez",
+      "emailAddress": "sofia.r@company.es",
+      "phone": "+34612345678",
+      "currentTitle": "Senior Data Scientist",
+      "currentCompany": "Booking.com",
+      "location": {
+        "city": "Barcelona",
+        "state": "Catalonia",
+        "country": "Spain"
+      },
+      "headline": "Data Scientist at Booking.com building ML models for dynamic pricing and demand forecasting. Previously at Telefonica Research.",
+      "skills": [
+        {"name": "Python", "level": "expert"},
+        {"name": "scikit-learn", "level": "expert"},
+        {"name": "Apache Spark", "level": "advanced"},
+        {"name": "SQL", "level": "expert"},
+        {"name": "Tableau", "level": "advanced"},
+        {"name": "R", "level": "advanced"},
+        {"name": "Deep Learning", "level": "advanced"},
+        {"name": "TensorFlow", "level": "intermediate"},
+        {"name": "Docker", "level": "intermediate"},
+        {"name": "A/B Testing", "level": "advanced"}
+      ],
+      "workExperience": [
+        {
+          "org": "Booking.com",
+          "role": "Senior Data Scientist",
+          "startDate": "2023-06",
+          "endDate": null,
+          "description": "Building dynamic pricing models for 28M+ property listings. Increased revenue per booking by 8%."
+        },
+        {
+          "org": "Telefonica Research",
+          "role": "Data Scientist",
+          "startDate": "2021-03",
+          "endDate": "2023-05",
+          "description": "Developed churn prediction models achieving 94% AUC. Led A/B testing framework for 50M+ users."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Universitat Politecnica de Catalunya",
+          "degree": "M.Sc. in Data Science",
+          "graduationYear": 2021
+        },
+        {
+          "institution": "Universidad de Barcelona",
+          "degree": "B.Sc. in Mathematics",
+          "graduationYear": 2019
+        }
+      ],
+      "links": {
+        "linkedin": "https://linkedin.com/in/sofiarodriguez-ds",
+        "github": "https://github.com/sofia-rodriguez"
+      },
+      "yearsOfExperience": 4
+    },
+    {
+      "candidateName": "Takeshi Yamamoto",
+      "emailAddress": "takeshi.y@gmail.com",
+      "phone": "+819012345678",
+      "currentTitle": "Full Stack Developer",
+      "currentCompany": "LINE Corp",
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "country": "Japan"
+      },
+      "headline": "Full-stack developer at LINE building social commerce features. Passionate about React, TypeScript, and serverless architecture.",
+      "skills": [
+        {"name": "TypeScript", "level": "expert"},
+        {"name": "React", "level": "expert"},
+        {"name": "Node.js", "level": "advanced"},
+        {"name": "AWS", "level": "advanced"},
+        {"name": "Docker", "level": "intermediate"},
+        {"name": "MongoDB", "level": "advanced"},
+        {"name": "GraphQL", "level": "advanced"},
+        {"name": "Python", "level": "intermediate"},
+        {"name": "Redis", "level": "intermediate"}
+      ],
+      "workExperience": [
+        {
+          "org": "LINE Corp",
+          "role": "Full Stack Developer",
+          "startDate": "2023-04",
+          "endDate": null,
+          "description": "Building social commerce platform serving 90M+ monthly active users in Japan."
+        },
+        {
+          "org": "Mercari",
+          "role": "Frontend Engineer",
+          "startDate": "2021-10",
+          "endDate": "2023-03",
+          "description": "Developed marketplace listing features. Improved page load time by 40% using SSR and code splitting."
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Tokyo",
+          "degree": "B.Eng. in Information Science",
+          "graduationYear": 2021
+        }
+      ],
+      "links": {
+        "github": "https://github.com/takeshi-dev"
+      },
+      "yearsOfExperience": 3
+    }
+  ]
+}

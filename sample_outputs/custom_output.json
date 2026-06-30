@@ -1,0 +1,127 @@
+[
+  {
+    "profile": {
+      "full_name": "Priya Sharma",
+      "primary_email": "priya.sharma@email.com",
+      "phone": "+919876543210",
+      "city": "Bangalore",
+      "country": "IN",
+      "headline": "Experienced full-stack engineer with expertise in cloud-native applications and distributed systems. Passionate about building scalable solutions.",
+      "years_experience": 6.5,
+      "skills": [
+        "AWS",
+        "Docker",
+        "Node.js",
+        "PostgreSQL",
+        "Python",
+        "React",
+        "System Design"
+      ],
+      "overall_confidence": 0.89
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "full_name": "Arjun Mehta",
+      "primary_email": "arjun.mehta@gmail.com",
+      "phone": "+14155550172",
+      "city": "San Francisco",
+      "country": "US",
+      "headline": "Systems-oriented backend engineer focused on payment infrastructure and distributed systems.",
+      "years_experience": 4.5,
+      "skills": [
+        "Go",
+        "gRPC",
+        "Kubernetes",
+        "PostgreSQL",
+        "Python",
+        "Redis"
+      ],
+      "overall_confidence": 0.89
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "full_name": "Emily Chen",
+      "primary_email": "emily.chen@outlook.com",
+      "phone": "+12065550198",
+      "city": "Seattle",
+      "country": "US",
+      "headline": "Product Manager",
+      "years_experience": 8.0,
+      "skills": [
+        "Agile",
+        "Data Analysis",
+        "Product Strategy",
+        "SQL"
+      ],
+      "overall_confidence": 0.67
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "full_name": "Ravi Kumar",
+      "primary_email": "ravi.k@techmail.com",
+      "phone": "+918045678901",
+      "city": "Hyderabad",
+      "country": "IN",
+      "headline": "Full Stack Developer",
+      "years_experience": 3.0,
+      "skills": [
+        "Angular",
+        "Java",
+        "MongoDB",
+        "Spring Boot"
+      ],
+      "overall_confidence": 0.67
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "full_name": "Sarah Johnson",
+      "primary_email": "sarah.j@company.com",
+      "phone": "+16505550134",
+      "city": "Mountain View",
+      "country": "US",
+      "headline": "Machine Learning Engineer specializing in NLP and computer vision at Google. Building AI that makes a difference.",
+      "years_experience": 5.0,
+      "skills": [
+        "Apache Spark",
+        "BigQuery",
+        "Computer Vision",
+        "Deep Learning",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Python",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "overall_confidence": 0.9
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

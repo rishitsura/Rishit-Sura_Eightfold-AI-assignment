@@ -1,0 +1,9 @@
+name,email,phone,current_company,title,location,skills,years_experience
+Rishit Sura,rishitsura@gmail.com,+91-7382997890,IBM SkillsBuild,Data Science Intern,"Hyderabad, India","Python, React.js, FastAPI, Docker, TensorFlow, PostgreSQL, JavaScript, TypeScript",2
+Ananya Krishnan,ananya.k@gmail.com,+91-9845012345,Google,ML Engineer,"Bangalore, India","Python, TensorFlow, PyTorch, Kubernetes, BigQuery, Apache Spark, Computer Vision",4
+Marcus Weber,marcus.weber@protonmail.com,+49-151-23456789,Stripe,Senior Backend Engineer,"Berlin, Germany","Go, Rust, PostgreSQL, Kubernetes, gRPC, Redis, Terraform",6
+Priya Deshmukh,priya.deshmukh@outlook.com,+91-9823456789,Flipkart,Product Manager,"Pune, India","Product Strategy, SQL, Data Analysis, Agile, A/B Testing, Figma",5
+Takeshi Yamamoto,takeshi.y@gmail.com,+81-90-1234-5678,LINE Corp,Full Stack Developer,"Tokyo, Japan","TypeScript, React, Node.js, AWS, Docker, MongoDB, GraphQL",3
+Sofia Rodriguez,sofia.r@company.es,+34-612-345-678,Booking.com,Data Scientist,"Barcelona, Spain","Python, scikit-learn, Apache Spark, SQL, Tableau, R, Deep Learning",4
+Kavitha Nair,kavitha.nair@techcorp.in,+91-9567890123,Infosys,Software Engineer,"Chennai, India","Java, Spring Boot, Angular, MySQL, Docker, AWS",3
+Raj Patel,raj.patel@email.com,+91-8765432190,Razorpay,Backend Developer,"Mumbai, India","Python, Django, Redis, PostgreSQL, Celery, Docker, Kubernetes",4

@@ -1,0 +1,1539 @@
+[
+  {
+    "profile": {
+      "candidate_id": "af0705d6-75bf-4cdc-a139-f39372d1b3c6",
+      "full_name": "Rishit Sura",
+      "emails": [
+        "rishitsura@gmail.com"
+      ],
+      "phones": [
+        "+917382997890"
+      ],
+      "location": {
+        "city": "Hyderabad",
+        "region": "Telangana",
+        "country": "IN"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/rishitsura",
+        "github": "https://github.com/rishit-sura",
+        "portfolio": null,
+        "other": []
+      },
+      "headline": "Full-stack developer and AI/ML enthusiast with strong experience in building production-grade systems using Python, React.js, FastAPI, and Docker. Grand Finalist at Smart India Hackathon 2024 & 2025....",
+      "years_experience": 2.0,
+      "skills": [
+        {
+          "name": "A Delivery Optimization System For India Post",
+          "confidence": 0.25,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "AWS",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "Bootstrap",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "C++",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "CSS",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "Double Dqn Reinforcement Learning Agents",
+          "confidence": 0.25,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Express.js",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "Flask",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "Git",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "Github",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "HTML",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "Java",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "Microsoft Power Bi",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "MySQL",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "Node.js",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "NumPy",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "Opencv",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "Pandas",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "React",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "scikit-learn",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json",
+            "resume"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "SQLite",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "Tableau",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "confidence": 0.75,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ]
+        },
+        {
+          "name": "Yolov8",
+          "confidence": 0.25,
+          "sources": [
+            "resume"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "IBM SkillsBuild",
+          "title": "Data Science Intern",
+          "start": "2024-02",
+          "end": "2024-03",
+          "summary": "Analyzed large-scale datasets using R programming. Created data analysis reports and dashboards for stakeholders."
+        }
+      ],
+      "education": [
+        {
+          "institution": "VNR Vignana Jyothi Institute of Engineering and Technology",
+          "degree": "B.Tech in Computer Science and Engineering (AIML)",
+          "field": "omputer Science and Engineering (AIML)",
+          "end_year": 2026
+        },
+        {
+          "institution": "Sri Chaitanya Junior College",
+          "degree": null,
+          "field": null,
+          "end_year": 2020
+        },
+        {
+          "institution": null,
+          "degree": "B.Tech in CS",
+          "field": null,
+          "end_year": null
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "resume",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "ats_json, recruiter_csv, recruiter_notes, resume",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "ats_json",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "ats_json, recruiter_csv, recruiter_notes, resume",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "ats_json, recruiter_notes, resume",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "most_complete"
+        },
+        {
+          "field": "links",
+          "source": "resume",
+          "method": "first_non_null"
+        }
+      ],
+      "overall_confidence": 0.88
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "3bd3f6b3-bee3-43c7-83fe-5d13a7bcc329",
+      "full_name": "Ananya Krishnan",
+      "emails": [
+        "ananya.k@gmail.com"
+      ],
+      "phones": [
+        "+919845012345"
+      ],
+      "location": {
+        "city": "Bangalore",
+        "region": "Karnataka",
+        "country": "IN"
+      },
+      "links": null,
+      "headline": "Machine Learning Engineer at Google specializing in NLP and recommendation systems. Building large-scale ML pipelines serving 100M+ users.",
+      "years_experience": 4.0,
+      "skills": [
+        {
+          "name": "Apache Spark",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "BigQuery",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Computer Vision",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Natural Language Processing",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "PyTorch",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Google",
+          "title": "ML Engineer",
+          "start": "2023-01",
+          "end": null,
+          "summary": "Building recommendation models for YouTube Shorts. Reduced model latency by 35% using TensorRT optimization."
+        },
+        {
+          "company": "Amazon",
+          "title": "Applied Scientist Intern",
+          "start": "2022-05",
+          "end": "2022-08",
+          "summary": "Developed NER models for product attribute extraction. Improved F1 score by 12% over baseline."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indian Institute of Technology Madras",
+          "degree": "M.Tech in Computer Science",
+          "field": null,
+          "end_year": 2022
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "ats_json, recruiter_csv",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "ats_json",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "ats_json, recruiter_csv",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "ats_json",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "most_complete"
+        }
+      ],
+      "overall_confidence": 0.82
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "3f727a66-36ca-4ceb-afc2-72c17aadc422",
+      "full_name": "Marcus Weber",
+      "emails": [
+        "marcus.weber@protonmail.com"
+      ],
+      "phones": [
+        "+4915123456789"
+      ],
+      "location": {
+        "city": "Berlin",
+        "region": "Berlin",
+        "country": "DE"
+      },
+      "links": null,
+      "headline": "Systems-oriented backend engineer building payment infrastructure at Stripe. Focused on high-throughput distributed systems.",
+      "years_experience": 6.0,
+      "skills": [
+        {
+          "name": "AWS",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Go",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "gRPC",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Redis",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Rust",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Terraform",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Stripe",
+          "title": "Senior Backend Engineer",
+          "start": "2022-03",
+          "end": null,
+          "summary": "Architected payment routing engine handling $50B+ annual volume. Reduced transaction failure rate by 23%."
+        },
+        {
+          "company": "Delivery Hero",
+          "title": "Backend Engineer",
+          "start": "2020-01",
+          "end": "2022-02",
+          "summary": "Built real-time order tracking microservices. Scaled system to handle 2M concurrent connections."
+        },
+        {
+          "company": "SAP",
+          "title": "Software Developer",
+          "start": "2018-07",
+          "end": "2019-12",
+          "summary": "Developed enterprise resource planning modules for cloud migration."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Technical University of Munich",
+          "degree": "M.Sc. in Informatics",
+          "field": null,
+          "end_year": 2018
+        },
+        {
+          "institution": "RWTH Aachen University",
+          "degree": "B.Sc. in Computer Science",
+          "field": null,
+          "end_year": 2016
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "ats_json, recruiter_csv",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "ats_json",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "ats_json, recruiter_csv",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "ats_json",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "most_complete"
+        }
+      ],
+      "overall_confidence": 0.82
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "f90c6f19-c001-4e23-90ed-c3688dacb027",
+      "full_name": "Priya Deshmukh",
+      "emails": [
+        "priya.deshmukh@outlook.com"
+      ],
+      "phones": [
+        "+919823456789",
+        "+10209823456789"
+      ],
+      "location": {
+        "city": "Pune",
+        "region": null,
+        "country": "IN"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/priyadeshmukh-pm",
+        "github": null,
+        "portfolio": null,
+        "other": []
+      },
+      "headline": "Product Manager",
+      "years_experience": 5.0,
+      "skills": [
+        {
+          "name": "A/B Testing",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Agile",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Agile Methodologies",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "B Testing",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Data Analysis",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Figma",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Product Strategy",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Flipkart",
+          "title": "Product Manager",
+          "start": null,
+          "end": null,
+          "summary": null
+        }
+      ],
+      "education": [
+        {
+          "institution": "IIT Bombay",
+          "degree": "B.Tech in Computer Science",
+          "field": null,
+          "end_year": null
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv, recruiter_notes",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "recruiter_csv, recruiter_notes",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "recruiter_csv, recruiter_notes",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "recruiter_notes",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "recruiter_csv",
+          "method": "most_complete"
+        },
+        {
+          "field": "links",
+          "source": "recruiter_notes",
+          "method": "first_non_null"
+        }
+      ],
+      "overall_confidence": 0.83
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "cb00a77d-79e2-4238-8fff-75d3ebf686eb",
+      "full_name": "Takeshi Yamamoto",
+      "emails": [
+        "takeshi.y@gmail.com"
+      ],
+      "phones": [
+        "+819012345678"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP"
+      },
+      "links": null,
+      "headline": "Full-stack developer at LINE building social commerce features. Passionate about React, TypeScript, and serverless architecture.",
+      "years_experience": 3.0,
+      "skills": [
+        {
+          "name": "AWS",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "GraphQL",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Node.js",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "React",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Redis",
+          "confidence": 0.5,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "LINE Corp",
+          "title": "Full Stack Developer",
+          "start": "2023-04",
+          "end": null,
+          "summary": "Building social commerce platform serving 90M+ monthly active users in Japan."
+        },
+        {
+          "company": "Mercari",
+          "title": "Frontend Engineer",
+          "start": "2021-10",
+          "end": "2023-03",
+          "summary": "Developed marketplace listing features. Improved page load time by 40% using SSR and code splitting."
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Tokyo",
+          "degree": "B.Eng. in Information Science",
+          "field": null,
+          "end_year": 2021
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "ats_json, recruiter_csv",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "ats_json",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "ats_json, recruiter_csv",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "ats_json",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "most_complete"
+        }
+      ],
+      "overall_confidence": 0.82
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "f09808f2-5ca3-4e7b-899c-5aa7555a3f5d",
+      "full_name": "Sofia Rodriguez",
+      "emails": [
+        "sofia.r@company.es"
+      ],
+      "phones": [
+        "+34612345678"
+      ],
+      "location": {
+        "city": "Barcelona",
+        "region": "Catalonia",
+        "country": "ES"
+      },
+      "links": null,
+      "headline": "Data Scientist at Booking.com building ML models for dynamic pricing and demand forecasting. Previously at Telefonica Research.",
+      "years_experience": 4.0,
+      "skills": [
+        {
+          "name": "A/B Testing",
+          "confidence": 0.33,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Apache Spark",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Deep Learning",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.33,
+          "sources": [
+            "ats_json"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "R",
+          "confidence": 0.67,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "R For Statistical Analysis",
+          "confidence": 0.33,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "scikit-learn",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Tableau",
+          "confidence": 0.67,
+          "sources": [
+            "ats_json",
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Tableau For Visualization",
+          "confidence": 0.33,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "confidence": 0.33,
+          "sources": [
+            "ats_json"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Booking.com",
+          "title": "Senior Data Scientist",
+          "start": "2023-06",
+          "end": null,
+          "summary": "Building dynamic pricing models for 28M+ property listings. Increased revenue per booking by 8%."
+        },
+        {
+          "company": "Telefonica Research",
+          "title": "Data Scientist",
+          "start": "2021-03",
+          "end": "2023-05",
+          "summary": "Developed churn prediction models achieving 94% AUC. Led A/B testing framework for 50M+ users."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Universitat Politecnica de Catalunya",
+          "degree": "M.Sc. in Data Science",
+          "field": null,
+          "end_year": 2021
+        },
+        {
+          "institution": "Universidad de Barcelona",
+          "degree": "B.Sc. in Mathematics",
+          "field": null,
+          "end_year": 2019
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "ats_json",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "ats_json, recruiter_csv, recruiter_notes",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "ats_json",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "ats_json, recruiter_csv, recruiter_notes",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "education",
+          "source": "ats_json",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "most_complete"
+        }
+      ],
+      "overall_confidence": 0.82
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "56a1e014-9d5b-427f-b260-ca09a4d764fa",
+      "full_name": "Kavitha Nair",
+      "emails": [
+        "kavitha.nair@techcorp.in"
+      ],
+      "phones": [
+        "+919567890123"
+      ],
+      "location": {
+        "city": "Chennai",
+        "region": null,
+        "country": "IN"
+      },
+      "links": null,
+      "headline": "Software Engineer",
+      "years_experience": 3.0,
+      "skills": [
+        {
+          "name": "Angular",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "AWS",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Java",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "MySQL",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Spring Boot",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Infosys",
+          "title": "Software Engineer",
+          "start": null,
+          "end": null,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "recruiter_csv",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "recruiter_csv",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "recruiter_csv",
+          "method": "most_complete"
+        }
+      ],
+      "overall_confidence": 0.67
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "profile": {
+      "candidate_id": "31eeae27-8fe6-486f-a313-ad8d6583d9d5",
+      "full_name": "Raj Patel",
+      "emails": [
+        "raj.patel@email.com"
+      ],
+      "phones": [
+        "+918765432190"
+      ],
+      "location": {
+        "city": "Mumbai",
+        "region": null,
+        "country": "IN"
+      },
+      "links": {
+        "linkedin": null,
+        "github": "https://github.com/rajpatel-dev",
+        "portfolio": null,
+        "other": []
+      },
+      "headline": "Backend Developer",
+      "years_experience": 4.0,
+      "skills": [
+        {
+          "name": "Celery",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Django",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "High-Throughput Distributed Systems",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Payment Systems",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Pci Compliance",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 1.0,
+          "sources": [
+            "recruiter_csv",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Redis",
+          "confidence": 0.5,
+          "sources": [
+            "recruiter_csv"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Razorpay",
+          "title": "Backend Developer",
+          "start": null,
+          "end": null,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "headline",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_csv",
+          "method": "priority_merge"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv, recruiter_notes",
+          "method": "union_dedup"
+        },
+        {
+          "field": "phones",
+          "source": "recruiter_csv",
+          "method": "union_dedup_e164"
+        },
+        {
+          "field": "skills",
+          "source": "all",
+          "method": "union_canonical_merge"
+        },
+        {
+          "field": "experience",
+          "source": "recruiter_csv, recruiter_notes",
+          "method": "dedup_merge"
+        },
+        {
+          "field": "location",
+          "source": "recruiter_csv",
+          "method": "most_complete"
+        },
+        {
+          "field": "links",
+          "source": "recruiter_notes",
+          "method": "first_non_null"
+        }
+      ],
+      "overall_confidence": 0.74
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

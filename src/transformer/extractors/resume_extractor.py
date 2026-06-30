@@ -188,7 +188,7 @@ def _extract_text_from_pdf(path: Path) -> str:
     default left-to-right extraction produces on two-column resume layouts.
     """
     try:
-        import pdfplumber
+        import pdfplumber  # type: ignore
         text_parts: list[str] = []
         with pdfplumber.open(path) as pdf:
             for page in pdf.pages:
@@ -223,7 +223,7 @@ def _extract_text_from_pdf(path: Path) -> str:
 def _extract_text_from_docx(path: Path) -> str:
     """Extract text from a DOCX file."""
     try:
-        import docx
+        import docx  # type: ignore
         doc = docx.Document(path)
         return "\n".join(para.text for para in doc.paragraphs)
     except Exception as e:

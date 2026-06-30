@@ -85,8 +85,39 @@ if st.button("Run Pipeline", type="primary"):
                         conf = profile.get("overall_confidence", 0)
                         
                         status_icon = "✅" if is_valid else "❌"
-                        with st.expander(f"{status_icon} {name} (Confidence: {conf:.2f})", expanded=True):
-                            st.json(result)
+                        with st.expander(f"{status_icon} {name} (Confidence: {conf:.2f})", expanded=False):
+                            # High-level clean UX display
+                            col1, col2 = st.columns(2)
+                            
+                            with col1:
+                                st.markdown(f"**Candidate ID:** `{profile.get('candidate_id', 'N/A')}`")
+                                st.markdown(f"**Full Name:** {profile.get('full_name', 'N/A')}")
+                                
+                                emails = profile.get("emails", [])
+                                if emails:
+                                    st.markdown(f"**Emails:** {', '.join(emails)}")
+                                    
+                                phones = profile.get("phones", [])
+                                if phones:
+                                    st.markdown(f"**Phones:** {', '.join(phones)}")
+                                    
+                            with col2:
+                                loc = profile.get("location", {})
+                                loc_str = ", ".join(filter(None, [loc.get("city"), loc.get("region"), loc.get("country")]))
+                                st.markdown(f"**Location:** {loc_str or 'N/A'}")
+                                
+                                exp = profile.get("years_experience")
+                                st.markdown(f"**Years of Experience:** {exp if exp is not None else 'N/A'}")
+                                
+                                headline = profile.get("headline")
+                                st.markdown(f"**Headline:** {headline or 'N/A'}")
+                                
+                            # Divider
+                            st.divider()
+                            
+                            # Toggle for Raw JSON Schema
+                            if st.toggle("View Schema (Raw JSON)", key=f"toggle_{i}"):
+                                st.json(result)
                             
                 except Exception as e:
                     st.error(f"Error running pipeline: {str(e)}")

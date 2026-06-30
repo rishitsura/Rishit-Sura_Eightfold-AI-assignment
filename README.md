@@ -232,4 +232,3 @@ The pipeline accepts a runtime JSON config that reshapes the output without code
 - ML-based entity extraction from unstructured text
 - Batch processing with parallel I/O (currently sequential)
 - Persistent storage / database integration
-- Web UI (CLI is the primary interface)

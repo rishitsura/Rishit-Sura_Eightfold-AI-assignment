@@ -31,17 +31,13 @@ pdf.chapter_body(
 
 pdf.chapter_title('2. Pipeline Architecture')
 pdf.chapter_body(
-    "The deterministic, rule-based pipeline consists of six stages:\n\n"
-    "1. Detect & Extract: Source-specific extractors parse inputs into unified CandidateFragment objects.\n"
+    "The deterministic, rule-based pipeline consists of advanced stages to guarantee data integrity:\n\n"
+    "1. Detect & Extract: Source-specific extractors parse inputs (CSV, JSON, GitHub, Resumes, Notes) into CandidateFragment objects.\n"
     "2. Normalize: Phones map to E.164, locations extract city/country, degrees map to standard formats.\n"
-    "3. Conflict Analysis (CACS): Analyzes divergence between overlapping fields. Flags silent conflict masking, creates a traceable Lineage IR log, and applies temporal stratification to skills.\n"
-    "4. Merge: Identities match via primary (email) and secondary (name + phone) keys. Scalar fields take the most "
-    "reliable source's value. Array fields (Skills, Experience, Education) merge via fuzzy matching deduplication.\n"
-    "5. Confidence Scoring: Each profile receives an overall confidence score based on source weights (ATS > CSV > Resume), "
-    "cross-source agreement, and penalties from detected conflicts.\n"
-    "6. Project: Runtime JSON configurations dictate field selection, JSON structure mapping, and missing-value policies "
-    "(null vs omit vs error).\n"
-    "7. Validate: The final payload conforms rigidly to the requested downstream schema."
+    "3. Conflict Analysis (CACS): A pre-merge analytical pass detects contradictory data across sources. It flags discrepancies for confidence penalties, stratifies skills by recency (Confirmed, Current, Historical), and generates a fully traceable Lineage IR.\n"
+    "4. Merge: Identities match via primary keys. Scalar fields take the most reliable source's value. Array fields merge via rapidfuzz deduplication.\n"
+    "5. Confidence Scoring: Profiles receive a score based on source weights and cross-source agreement, adjusted by CACS penalties.\n"
+    "6. Project & Validate: Runtime JSON configurations dictate the final structure and missing-value policies before rigid schema validation."
 )
 
 pdf.chapter_title('3. Resolution Heuristics')
@@ -53,12 +49,11 @@ pdf.chapter_body(
     "to properly anchor both title and company, minimizing hallucinations."
 )
 
-pdf.chapter_title('4. Future Enhancements (Descoped for MVP)')
+pdf.chapter_title('4. User Interfaces')
 pdf.chapter_body(
-    "- ML-based sequence tagging (NER) for free-text sections, complementing regex patterns.\n"
-    "- Parallelized I/O streaming for processing gigabyte-scale exports.\n"
-    "- Direct database sync/upsert capabilities beyond JSON file generation."
+    "- Command Line Interface (CLI): The primary robust engine for batch processing profiles.\n"
+    "- Web UI (Streamlit): An interactive dashboard for evaluators to upload candidate files and view the resulting canonical JSON instantaneously."
 )
 
-pdf.output('STEP_1_ONE_PAGER.pdf')
+pdf.output('Eightfold_Candidate_Transformer_Design.pdf')
 print("PDF created successfully.")

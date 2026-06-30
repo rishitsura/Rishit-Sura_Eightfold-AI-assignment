@@ -43,6 +43,7 @@ from transformer.normalizers import (
     normalize_country,
     normalize_url,
 )
+from transformer.conflict_analyzer import ConflictAnalyzer
 
 logger = logging.getLogger(__name__)
 
@@ -169,6 +170,9 @@ class CandidateMerger:
     ) -> CanonicalProfile:
         """Merge a group of fragments into a single CanonicalProfile."""
 
+        # Step 0: Run conflict analysis pre-merge (Conflict-Aware Confidence + Lineage)
+        report = ConflictAnalyzer().analyze(fragments)
+
         # Sort by source priority (highest priority first)
         sorted_fragments = sorted(
             fragments,
@@ -195,9 +199,17 @@ class CandidateMerger:
         # --- Merge array fields (union + dedup) ---
         emails = self._merge_emails(sorted_fragments, provenance)
         phones = self._merge_phones(sorted_fragments, provenance)
-        skills = self._merge_skills(sorted_fragments, provenance)
         experience = self._merge_experience(sorted_fragments, provenance)
         education = self._merge_education(sorted_fragments, provenance)
+
+        # Skills come pre-stratified from the ConflictAnalyzer
+        skills = report.skill_list
+        if skills:
+            provenance.append(Provenance(
+                field="skills",
+                source="all",
+                method="union_canonical_merge_stratified",
+            ))
 
         # --- Merge compound objects ---
         location = self._merge_location(sorted_fragments, provenance)
@@ -215,6 +227,8 @@ class CandidateMerger:
             experience=experience,
             education=education,
             provenance=provenance,
+            conflict_flags=report.flags,
+            merge_decisions=report.merge_decisions,
         )
 
         return profile
@@ -313,47 +327,7 @@ class CandidateMerger:
 
         return result
 
-    # --- Skills merge ---
 
-    def _merge_skills(
-        self,
-        fragments: list[CandidateFragment],
-        provenance: list[Provenance],
-    ) -> list[Skill]:
-        """
-        Merge skills: union across sources, normalize names,
-        track per-skill source count for confidence.
-        """
-        skill_sources: dict[str, list[str]] = defaultdict(list)
-
-        for frag in fragments:
-            normalized = normalize_skills_list(frag.skills)
-            for skill_name in normalized:
-                canonical = skill_name.lower()
-                if frag.source_type.value not in skill_sources[canonical]:
-                    skill_sources[canonical].append(frag.source_type.value)
-
-        total_sources = len(set(f.source_type for f in fragments))
-        skills: list[Skill] = []
-
-        for canonical_lower, sources in sorted(skill_sources.items()):
-            # Re-normalize to get proper casing
-            display_name = normalize_skill(canonical_lower)
-            confidence = len(sources) / max(total_sources, 1)
-            skills.append(Skill(
-                name=display_name,
-                confidence=round(confidence, 2),
-                sources=sources,
-            ))
-
-        if skills:
-            provenance.append(Provenance(
-                field="skills",
-                source="all",
-                method="union_canonical_merge",
-            ))
-
-        return skills
 
     # --- Experience merge ---
 

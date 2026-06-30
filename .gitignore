@@ -26,3 +26,6 @@ Thumbs.db
 .pytest_cache/
 htmlcov/
 .coverage
+
+.Problem_statement.md
+.walkthrough.md

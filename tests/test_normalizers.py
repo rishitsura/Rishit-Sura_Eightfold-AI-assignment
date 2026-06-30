@@ -86,7 +86,7 @@ class TestNormalizeCountry:
     def test_iso_code(self):
         assert normalize_country("US") == "US"
         assert normalize_country("us") == "US"
-        assert normalize_country("IN") == "IN"
+        assert normalize_country("FR") == "FR"
 
     def test_full_name(self):
         assert normalize_country("United States") == "US"

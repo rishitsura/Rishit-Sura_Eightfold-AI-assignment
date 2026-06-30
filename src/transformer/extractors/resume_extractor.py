@@ -117,16 +117,103 @@ _LOCATION_RE = re.compile(
 )
 
 
+def _is_multi_column_page(words: list, page_width: float) -> bool:
+    """
+    Detect whether a PDF page uses a multi-column layout.
+
+    Heuristic: if more than 20% of words have x0 > 50% of the page width
+    AND more than 20% have x0 < 50%, the page is likely two-column.
+    """
+    if not words or page_width <= 0:
+        return False
+    midpoint = page_width / 2
+    left_count = sum(1 for w in words if w.get("x0", 0) < midpoint)
+    right_count = sum(1 for w in words if w.get("x0", 0) >= midpoint)
+    total = left_count + right_count
+    if total == 0:
+        return False
+    return (left_count / total > 0.2) and (right_count / total > 0.2)
+
+
+def _extract_text_sorted(page) -> str:
+    """
+    Extract text from a pdfplumber page, re-sorting words by vertical position
+    (top → bottom) to handle multi-column layouts without scrambling.
+
+    For single-column pages this produces the same result as extract_text().
+    For two-column pages it preserves reading order row by row.
+    """
+    try:
+        words = page.extract_words()
+    except Exception:
+        return page.extract_text() or ""
+
+    if not words:
+        return page.extract_text() or ""
+
+    # Sort words: primary key = top (vertical position), secondary = x0 (left→right)
+    words_sorted = sorted(words, key=lambda w: (round(w.get("top", 0)), w.get("x0", 0)))
+
+    # Group words into lines by proximity of their top coordinate (±3 pts = same line)
+    lines: list[list[str]] = []
+    current_line: list[str] = []
+    current_top: float | None = None
+
+    for word in words_sorted:
+        top = word.get("top", 0)
+        text = word.get("text", "")
+        if not text:
+            continue
+        if current_top is None or abs(top - current_top) <= 3:
+            current_line.append(text)
+            current_top = top
+        else:
+            if current_line:
+                lines.append(current_line)
+            current_line = [text]
+            current_top = top
+
+    if current_line:
+        lines.append(current_line)
+
+    return "\n".join(" ".join(line) for line in lines)
+
+
 def _extract_text_from_pdf(path: Path) -> str:
-    """Extract text from a PDF file."""
+    """
+    Extract text from a PDF file.
+
+    Automatically detects multi-column layouts and re-sorts word bounding boxes
+    top-to-bottom before joining, preventing the scrambled text that pdfplumber's
+    default left-to-right extraction produces on two-column resume layouts.
+    """
     try:
         import pdfplumber
         text_parts: list[str] = []
         with pdfplumber.open(path) as pdf:
             for page in pdf.pages:
-                page_text = page.extract_text()
-                if page_text:
-                    text_parts.append(page_text)
+                try:
+                    words = page.extract_words()
+                    page_width = page.width or 0
+
+                    if _is_multi_column_page(words, page_width):
+                        logger.debug(
+                            "Multi-column layout detected on page %d of %s — using sorted extraction",
+                            getattr(page, "page_number", "?"),
+                            path.name,
+                        )
+                        page_text = _extract_text_sorted(page)
+                    else:
+                        page_text = page.extract_text() or ""
+
+                    if page_text:
+                        text_parts.append(page_text)
+                except Exception as page_err:
+                    logger.debug("Page extraction error in %s: %s", path.name, page_err)
+                    fallback = page.extract_text()
+                    if fallback:
+                        text_parts.append(fallback)
+
         return "\n".join(text_parts)
     except Exception as e:
         logger.warning("Failed to extract text from PDF %s: %s", path, e)

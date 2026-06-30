@@ -112,7 +112,12 @@ class ConfidenceScorer:
                 # Agreement bonus: more sources = higher confidence
                 agreement_bonus = min(source_count / 3.0, 1.0) * 0.2
 
+                # Apply Conflict-Aware Confidence Scoring (CACS) penalty
+                flag = next((f for f in profile.conflict_flags if f.field == field), None)
+                conflict_penalty = flag.penalty if flag else 0.0
+
                 field_confidence = min(best_source_weight + agreement_bonus, 1.0)
+                field_confidence = field_confidence * (1.0 - conflict_penalty)
 
             weighted_score += weight * field_confidence
             total_weight += weight

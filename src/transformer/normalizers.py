@@ -153,11 +153,27 @@ for _c in pycountry.countries:
         _COUNTRY_ALIASES[_c.common_name.lower()] = _c.alpha_2
 
 
+# US state abbreviations that are valid ISO alpha-2 codes for OTHER countries —
+# these must be blocked from country resolution when they appear as location
+# components (e.g., "San Francisco, CA" should not resolve CA → Canada).
+_US_STATE_CODES: frozenset[str] = frozenset({
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+    "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+    "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
+    "DC", "PR", "GU", "VI", "AS", "MP",
+})
+
+
 def normalize_country(raw: str) -> Optional[str]:
     """
     Normalize a country name or code to ISO-3166 alpha-2.
 
     Returns None if the country cannot be identified.
+
+    Note: US state abbreviations (CA, TX, NY, GA …) are explicitly blocked
+    from resolving to their ISO country-code homonyms (Canada, etc.).
     """
     if not raw or not raw.strip():
         return None
@@ -169,12 +185,20 @@ def normalize_country(raw: str) -> Optional[str]:
     if lower in _COUNTRY_ALIASES:
         return _COUNTRY_ALIASES[lower]
 
+    # Block US state abbreviations BEFORE the 2-letter ISO check.
+    # Without this, "CA" resolves to Canada, "GA" to Georgia (country), etc.
+    if cleaned.upper() in _US_STATE_CODES:
+        logger.debug(
+            "'%s' looks like a US state abbreviation — not resolving to a country code",
+            cleaned,
+        )
+        return None
+
     # Already a valid 2-letter ISO code?
     if len(cleaned) == 2 and cleaned.upper().isalpha():
         result = pycountry.countries.get(alpha_2=cleaned.upper())
         if result is not None:
             return cleaned.upper()
-
 
     # Fuzzy match against known country names
     match = process.extractOne(

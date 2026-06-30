@@ -202,17 +202,23 @@ class GitHubExtractor(BaseExtractor):
         # Skills from repo languages
         skills = languages
 
-        # Public repos count could inform years_experience heuristic
+        # NOTE: GitHub account age is NOT a reliable proxy for professional work
+        # experience (a dev may have joined GitHub as a student years before working).
+        # We store it in raw_extras for optional downstream use but never set
+        # years_experience from it.
         public_repos = profile.get("public_repos", 0)
         created_at = profile.get("created_at", "")
-        years_exp = None
+        raw_extras: dict = {
+            "public_repos": public_repos,
+        }
         if created_at:
             try:
-                from datetime import datetime
+                from datetime import datetime, timezone
                 created = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
-                from datetime import timezone
                 now = datetime.now(timezone.utc)
-                years_exp = round((now - created).days / 365.25, 1)
+                account_age_years = round((now - created).days / 365.25, 1)
+                raw_extras["github_account_age_years"] = account_age_years
+                raw_extras["github_created_at"] = created_at
             except Exception:
                 pass
 
@@ -224,6 +230,7 @@ class GitHubExtractor(BaseExtractor):
             location=location,
             links=links,
             headline=bio,
-            years_experience=years_exp,
+            years_experience=None,  # Never inferred from GitHub account age
             skills=skills,
+            raw_extras=raw_extras,
         )

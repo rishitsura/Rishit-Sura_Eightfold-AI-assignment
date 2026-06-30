@@ -165,8 +165,18 @@ class JSONExtractor(BaseExtractor):
             logger.warning("JSON file not found: %s", input_path)
             return []
 
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError as exc:
+            logger.warning(
+                "Malformed JSON in %s (line %d col %d): %s — skipping file",
+                input_path, exc.lineno, exc.colno, exc.msg,
+            )
+            return []
+        except OSError as exc:
+            logger.warning("Could not read JSON file %s: %s", input_path, exc)
+            return []
 
         # Handle both single object and array of candidates
         if isinstance(data, list):

@@ -14,16 +14,17 @@
 ## Architecture
 
 ```
-┌─────────┐   ┌─────────┐   ┌───────────┐   ┌───────────┐   ┌───────┐   ┌───────────┐   ┌─────────┐   ┌──────────┐
-│ Detect  │──▸│  Parse  │──▸│  Extract  │──▸│ Normalize │──▸│ Merge │──▸│ Confidence│──▸│ Project │──▸│ Validate │
-└─────────┘   └─────────┘   └───────────┘   └───────────┘   └───────┘   └───────────┘   └─────────┘   └──────────┘
+┌─────────┐   ┌─────────┐   ┌───────────┐   ┌───────────┐   ┌──────────┐   ┌───────┐   ┌───────────┐   ┌─────────┐   ┌──────────┐
+│ Detect  │──▸│  Parse  │──▸│  Extract  │──▸│ Normalize │──▸│ Conflict │──▸│ Merge │──▸│ Confidence│──▸│ Project │──▸│ Validate │
+└─────────┘   └─────────┘   └───────────┘   └───────────┘   └──────────┘   └───────┘   └───────────┘   └─────────┘   └──────────┘
 ```
 
 1. **Detect** — identify source type from file extension / URL / explicit flag
 2. **Parse/Extract** — source-specific extractors produce `CandidateFragment` objects
 3. **Normalize** — phones → E.164, dates → YYYY-MM, countries → ISO-3166, skills → canonical names
-4. **Merge** — group by identity (email → name+phone fallback), resolve conflicts by source priority
-5. **Confidence** — score each profile based on source reliability, cross-source agreement, field coverage
+4. **Conflict Analysis (CACS)** — detects contradictory data across sources (e.g., ATS vs Resume experience discrepancy), flags them for confidence penalties, and generates a fully traceable Lineage IR.
+5. **Merge** — group by identity (email → name+phone fallback), resolve conflicts by source priority
+6. **Confidence** — score each profile based on source reliability, cross-source agreement, field coverage, and apply Conflict penalties
 6. **Project** — apply runtime output config (field selection, remapping, normalization)
 7. **Validate** — check projected output against declared types and required fields
 

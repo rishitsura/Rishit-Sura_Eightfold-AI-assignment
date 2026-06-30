@@ -34,13 +34,14 @@ pdf.chapter_body(
     "The deterministic, rule-based pipeline consists of six stages:\n\n"
     "1. Detect & Extract: Source-specific extractors parse inputs into unified CandidateFragment objects.\n"
     "2. Normalize: Phones map to E.164, locations extract city/country, degrees map to standard formats.\n"
-    "3. Merge: Identities match via primary (email) and secondary (name + phone) keys. Scalar fields take the most "
+    "3. Conflict Analysis (CACS): Analyzes divergence between overlapping fields. Flags silent conflict masking, creates a traceable Lineage IR log, and applies temporal stratification to skills.\n"
+    "4. Merge: Identities match via primary (email) and secondary (name + phone) keys. Scalar fields take the most "
     "reliable source's value. Array fields (Skills, Experience, Education) merge via fuzzy matching deduplication.\n"
-    "4. Confidence Scoring: Each profile receives an overall confidence score based on source weights (ATS > CSV > Resume) "
-    "and cross-source agreement on critical fields.\n"
-    "5. Project: Runtime JSON configurations dictate field selection, JSON structure mapping, and missing-value policies "
+    "5. Confidence Scoring: Each profile receives an overall confidence score based on source weights (ATS > CSV > Resume), "
+    "cross-source agreement, and penalties from detected conflicts.\n"
+    "6. Project: Runtime JSON configurations dictate field selection, JSON structure mapping, and missing-value policies "
     "(null vs omit vs error).\n"
-    "6. Validate: The final payload conforms rigidly to the requested downstream schema."
+    "7. Validate: The final payload conforms rigidly to the requested downstream schema."
 )
 
 pdf.chapter_title('3. Resolution Heuristics')

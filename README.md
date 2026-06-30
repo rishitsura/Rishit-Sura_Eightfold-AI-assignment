@@ -2,6 +2,24 @@
 
 **Eightfold Engineering Intern Assignment** — A pipeline that ingests candidate data from multiple structured and unstructured sources, merges them into a single canonical profile, and projects the output through a configurable schema.
 
+## Usage
+
+You can run the pipeline either via the Command Line Interface (CLI) or through the minimal Web UI.
+
+### Option A: Web UI (Recommended for Demo)
+
+A simple web interface built with Streamlit to easily upload files and view the projected JSON results.
+
+```bash
+# Start the web UI
+streamlit run app.py
+```
+This will open `http://localhost:8501` in your browser. Upload your files (e.g. from `sample_inputs/`) and optionally a custom config to view the results instantly.
+
+### Option B: Command Line Interface (CLI)
+
+Transform candidate data from multiple sources (CSV, JSON, GitHub, resumes, recruiter notes) into a single canonical profile.
+
 ## Features
 
 - **5 Source Types**: Recruiter CSV, ATS JSON, GitHub API, Resume (PDF/DOCX/TXT), Recruiter Notes
@@ -25,8 +43,8 @@
 4. **Conflict Analysis (CACS)** — detects contradictory data across sources (e.g., ATS vs Resume experience discrepancy), flags them for confidence penalties, and generates a fully traceable Lineage IR.
 5. **Merge** — group by identity (email → name+phone fallback), resolve conflicts by source priority
 6. **Confidence** — score each profile based on source reliability, cross-source agreement, field coverage, and apply Conflict penalties
-6. **Project** — apply runtime output config (field selection, remapping, normalization)
-7. **Validate** — check projected output against declared types and required fields
+7. **Project** — apply runtime output config (field selection, remapping, normalization)
+8. **Validate** — check projected output against declared types and required fields
 
 ## Quick Start
 
